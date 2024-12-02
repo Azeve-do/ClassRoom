@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Inter:wght@100&family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h2 class="texto-simples">RODADA</h2>
+    <h2 class="texto-simples" id="identificacao-rodadas"></h2>
+
+    <section class="content__questoes">
+
+        <p class="content__questoes-enunciado" id="professor"></p>
+
+        <form class="content__questoes-alternativas" id="form">
+            <ul class="alternativas-listaDeOpçoes">
+                <li class="alternativa">
+                    <input type="radio" id="iprimeira" name="resposta" class="radio-box" value="">
+                    <label for="iprimeira" class="botao__opçoes" id="alternativa1"></label>
+                </li>
+                <li class="alternativa">
+                    <input type="radio" id="isegunda" name="resposta" class="radio-box" value="">
+                    <label for="isegunda" class="botao__opçoes" id="alternativa2"></label></label>
+                </li>
+                <li class="alternativa">
+                    <input type="radio" id="iterceira" name="resposta" class="radio-box" value="">
+                    <label for="iterceira" class="botao__opçoes" id="alternativa3"></label></label>
+                </li>
+                <li class="alternativa">
+                    <input type="radio" id="iquarta" name="resposta" class="radio-box" value="">
+                    <label for="iquarta" class="botao__opçoes" id="alternativa4"></label></label>
+                </li>
+            </ul>
+
+            <input type="submit" value="CONTINUAR" class="continue__button" id="botao-continue">
+
+        </form>
+    </section>
+    
+    <dialog id="modal">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Congratilations</title>
+            <link rel="stylesheet" href="estilos/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Inter:wght@100&family=Krona+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        </head>
+
+        <section class="Soluçao">
+            <h1 class="texto-acertou-ou-errou" id="texto-resposta"></h1>
+            <p class="texto-simples" id="texto-resposta-certa"></p>
+    
+            <div class="opçoes-apos-rodada">
+                <button class="botao botao-prosseguir" id="btn-prox-rodada">PRÓXIMA RODADA</button>
+                <button class="botao botao-prosseguir" id="btn-Sair">SAIR</button>
+            </div>
+    
+        </section>
+    </dialog>
+
+    <dialog id="modal2">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Partida Encerrada</title>
+            <link rel="stylesheet" href="estilos/style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Inter:wght@100&family=Krona+One&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <section class="content__rodadas">
+                <div id="contagem-de-acertos">0</div>
+                <h1 class="titulo-encerramento">PARTIDA <br>ENCERRADA</h1>
+                <button class="botao botao-encerramento" id="10r"onclick="DezRodadas()">+10 RODADAS</button>
+                <button class="botao botao-encerramento" id="5r" onclick="CincoRodadas()">+05 RODADAS</button>
+                <button class="botao botao-encerramento" id="3r" onclick="TresRodadas()">+03 RODADAS</button>
+                <button class="botao botao-encerramento" id="semL" onclick="SemLimites()">SEM LIMITES</button>
+                <button class="continue__button botao-encerramento" id="voltarInicio">PÁGINA INICIAL</button>
+            </section> 
+        </body>
+    </dialog>
+ 
+    <script src="script.js"></script>
+    <script src="scriptTresR.js"></script>
+
+</body>
+</html>

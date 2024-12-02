@@ -1,0 +1,219 @@
+@charset "UTF-8";
+html, body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #A784F2;
+}
+
+#modal, #modal2 {
+  background-color: #a784f2;
+  border: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.texto-simples {
+  font: normal 30px Bellota;
+  color: #ffffff;
+  -webkit-text-stroke-color: #0052f2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__jogar {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.content__jogar-titulo {
+  font: normal 60px Bellota;
+  color: #FFF;
+  -webkit-text-stroke-color: #0052f2;
+  -webkit-text-stroke-width: 1px;
+}
+
+.botao {
+  width: 356.636px;
+  padding: 0.3em;
+  border-radius: 41px;
+  border: 7px solid #FFF;
+  font: normal 30px Bellota;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  background: #EFAC6E;
+  color: #000000;
+  -webkit-text-stroke-color: #101aa3;
+  -webkit-text-stroke-width: 1px;
+}
+
+.content__rodadas {
+  display: flex;
+  flex-flow: column;
+  row-gap: 3.5em;
+}
+
+body {
+  flex-flow: column;
+}
+
+.content__questoes-enunciado {
+  width: 356.636px;
+  padding: 0.2em;
+  border-radius: 15px;
+  border: 7px solid #FFF;
+  font: normal 30px Bellota;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  background: #EFAC6E;
+  color: #000000;
+  -webkit-text-stroke-color: #101aa3;
+  -webkit-text-stroke-width: 1px;
+}
+
+.content__questoes-alternativas {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.alternativas-listaDeOpçoes {
+  width: 23em;
+  padding-left: 0;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.alternativa {
+  margin-top: 3em;
+}
+
+.botao__opçoes {
+  padding: 0 10%;
+  border-radius: 0.3em;
+  border: solid 0.2em #FFF;
+  font: normal 1.5em Bellota;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  background: #EFAC6E;
+  color: #000000;
+  -webkit-text-stroke-color: #101aa3;
+  -webkit-text-stroke-width: 1px;
+  cursor: pointer;
+}
+
+.radio-box {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: solid 1px #FFF;
+  border-radius: 5px;
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+.radio-box:checked {
+  background-color: #465ee7;
+}
+
+.continue__button {
+  font: normal 1.5em Bellota;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 1.5em;
+  background-color: transparent;
+  border: solid 0.2em #FFF;
+  border-radius: 0.5em;
+  -webkit-text-stroke-color: #101aa3;
+  -webkit-text-stroke-width: 1px;
+}
+
+.continue__button:hover, .continue__button:active {
+  color: #FFF;
+  background-color: #465ee7;
+}
+
+.Soluçao {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 0em;
+}
+
+.texto-acertou-ou-errou {
+  border: 6px solid #FFF;
+  border-radius: 15px;
+  height: 65px;
+  width: 280px;
+  padding: 0.3em 1em;
+  font: normal 3em Fugaz One;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFF;
+}
+
+.opçoes-apos-rodada {
+  display: flex;
+  flex-flow: column;
+  gap: 3em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #101aa3;
+}
+
+.botao-prosseguir {
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+#botao-sair {
+  margin-top: 0.85em;
+  width: 20%;
+}
+
+.titulo-encerramento {
+  font: normal 3em Bellota;
+  color: #FFF;
+  text-align: center;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-stroke-width: 1.3px;
+  margin-top: 0;
+}
+
+.botao-encerramento {
+  margin: auto;
+  font-size: 15px;
+  width: 230px;
+  height: 45px;
+  margin-top: 0;
+}
+
+#contagem-de-acertos {
+  width: 100px;
+  height: 100px;
+  align-self: end;
+  border-radius: 50% 0px 0px 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EFAC6E;
+  color: #FFF;
+  font: normal 1.5em Bellota;
+}/*# sourceMappingURL=style.css.map */

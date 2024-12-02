@@ -1,0 +1,45 @@
+.Soluçao {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-flow: column;
+    gap: 0em;
+}
+
+.texto-acertou-ou-errou {
+    border: 6px solid $cor-branca;
+    border-radius: 15px;
+    
+    height: 65px;
+    width: 280px;
+    padding: 0.3em 1em;
+
+    font: normal 3em $font-acerto-e-erro;
+    text-align: center;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $cor-branca;
+}
+
+.opçoes-apos-rodada {
+    display: flex;
+    flex-flow: column;
+    gap: 3em;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $borda-letras__botoes;
+}
+
+.botao-prosseguir {
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+#botao-sair {
+    margin-top: 0.85em;
+    width: 20%;
+}
+  

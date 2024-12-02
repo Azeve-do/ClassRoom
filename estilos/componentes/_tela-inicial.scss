@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content__jogar {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.content__jogar-titulo {
+    font: normal 60px $font-principal;
+    color: $cor-branca;
+
+    -webkit-text-stroke-color: $borda-letras__titulo;
+    -webkit-text-stroke-width: 1px;
+}
+
+.botao {
+    width: 356.636px;
+    padding: 0.3em;
+
+    border-radius: 41px;
+    border: 7px solid $cor-branca;
+    
+    font: normal 30px $font-principal;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    
+    background: $cor-secundaria;
+    color: $cor-preta;
+    
+    -webkit-text-stroke-color: $borda-letras__botoes;
+    -webkit-text-stroke-width: 1px;
+}
