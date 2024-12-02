@@ -212,7 +212,7 @@ botaoSairFinalizar.addEventListener('click', (event) => {
 })
 
 botaoProxRodada.addEventListener('click', () => {
-    location.href = 'AsrodadasSemlimites.html'
+    location.href = 'https://azeve-do.github.io/ClassRoom/AsrodadasSemlimites.html'
 })
 
 botaoSairRodadas.addEventListener('click', () => {
