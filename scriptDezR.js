@@ -96,6 +96,7 @@ const voltarInicio = document.getElementById('voltarInicio')
 // ------ VARIÁVEIS PARA O BACK-END
 const professorAleatorioIndex = Math.floor(Math.random() * listaProfessores.length);
 const professorAleatorio = listaProfessores[professorAleatorioIndex].nome
+const turmaDoProfessorAleatorio = listaProfessores[professorAleatorioIndex].turma
 const listaEscolhasAleatorias = []
 var quantidadeAcerto = 0
 var intContagemAcertos = sessionStorage.getItem('contagem')
