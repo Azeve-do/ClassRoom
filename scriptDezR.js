@@ -186,7 +186,7 @@ formulario.addEventListener('submit', (event) => {
             } else { 
                 textoAcertoOuErro.style.backgroundColor = '#D46262'
                 textoAcertoOuErro.innerHTML = 'ERROU!'
-                respostaCerta.innerText = `R: ${professor.turma, professor.turma2}`
+                respostaCerta.innerText = `R: ${professor.turma}, ${professor.turma2}`
                 modal.showModal()
             }
         }
